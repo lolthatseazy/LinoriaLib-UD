@@ -1,6 +1,6 @@
 local InputService = game:GetService('UserInputService');
 local TextService = game:GetService('TextService');
-local CoreGui = cloneref(game:GetService('CoreGui'));
+local CoreGui = cloneref(game.Players.LocalPlayer:WaitForChild("PlayerGui", 15)); -- Trust they dont expect it!
 local Teams = cloneref(game:GetService('Teams'));
 local Players = game:GetService('Players');
 local RunService = game:GetService('RunService')
